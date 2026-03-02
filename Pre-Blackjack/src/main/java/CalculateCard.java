@@ -3,15 +3,15 @@ import java.util.List;
 public class CalculateCard {
     public static void main(String[] args) {
         CalculateCard c = new CalculateCard();
-        System.out.println(c.calculateStringCard("1"));
-        System.out.println(c.calculateStringCard("J"));
-        System.out.println(c.calculateStringCard("Q"));
-        //System.out.println(c.calculateStringCard("D"));
-        //System.out.println(c.calculateStringCard("11"));
-        System.out.println(c.calculateStringCard("-1"));
+        System.out.println(c.calculateCard("1"));
+        System.out.println(c.calculateCard("10"));
+        System.out.println(c.calculateCard("Q"));
+        //System.out.println(c.calculateCard("D"));
+        //System.out.println(c.calculateCard("11"));
+        System.out.println(c.calculateCard("-1"));
     }
 
-    public int calculateStringCard(String card) {
+    public int calculateCard(String card) {
         if (judgeCard(card))
             return 10;
 
