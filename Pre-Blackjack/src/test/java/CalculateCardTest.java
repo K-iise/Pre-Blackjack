@@ -53,4 +53,14 @@ public class CalculateCardTest {
         Assertions.assertEquals(expect, result);
     }
 
+    @Test
+    public void 숫자_카드_범위_예외_테스트(){
+        // given
+        CalculateCard calculateCard = new CalculateCard();
+        String numberCard = "11";
+
+        // when & then
+        Assertions.assertThrows(IllegalArgumentException.class, ()-> calculateCard.calculateCard(numberCard));
+    }
+
 }
